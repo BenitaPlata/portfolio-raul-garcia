@@ -203,12 +203,12 @@ export default function Evidence() {
                 Dibujos y dedicatorias escritas por sus alumnos. La prueba más sincera de que algo especial pasó en el aula, año tras año.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 overflow-hidden">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
               {childrenLetters.slice(0, 4).map((letter, i) => (
                 <button
                   key={i}
                   onClick={() => openLightbox(i)}
-                  className="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-accent/40 transition-all hover:-translate-y-1 hover:shadow-lg bg-slate-50 flex items-center justify-center min-h-[160px] md:min-h-[220px]"
+                  className="aspect-square rounded-xl overflow-hidden border-2 border-slate-100 hover:border-accent/40 transition-all hover:-translate-y-1 hover:shadow-lg bg-slate-50 flex items-center justify-center w-full"
                   aria-label={`Ver carta ${i + 1}`}
                 >
                   <img
