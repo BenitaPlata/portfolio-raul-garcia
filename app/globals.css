@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-slate-700 bg-white;
+}
+
+@layer components {
+  .section-padding {
+    @apply pt-12 pb-20 sm:pt-16 sm:pb-24 px-4 sm:px-6 lg:px-8;
+  }
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium;
+  }
+  .badge-green {
+    @apply badge bg-emerald-50 text-emerald-700 border border-emerald-200;
+  }
+  .badge-blue {
+    @apply badge bg-stone-100 text-stone-700 border border-stone-200;
+  }
+  .badge-amber {
+    @apply badge bg-amber-50 text-amber-700 border border-amber-200;
+  }
+  .badge-white {
+    @apply badge bg-white/20 text-white border border-white/30;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:scale-105 shadow-lg shadow-orange-900/25;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-xl border border-white/30 transition-all duration-200;
+  }
+  .section-title {
+    @apply font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-primary;
+  }
+  .section-subtitle {
+    @apply text-base sm:text-lg text-muted mt-3;
+  }
+}
