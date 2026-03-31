@@ -16,14 +16,14 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Raúl García · Docente Bilingüe | Educación Infantil y Primaria',
+  title: 'Raúl García · Docente | Educación Infantil y Primaria',
   description:
-    'Portfolio profesional de Raúl García, docente con más de 10 años de experiencia, 2 años impartiendo en inglés, Premio al Mejor Docente de España y reconocimiento de la Comunidad de Madrid.',
+    'Portfolio profesional de Raúl García, docente con más de 15 años de experiencia, 2 años en colegio internacional en Eslovaquia, Premio al Mejor Docente de España y reconocimiento de la Comunidad de Madrid.',
   keywords: [
-    'docente bilingüe',
+    'docente',
     'profesor primaria',
     'educación infantil',
-    'bilingüe inglés',
+    'experiencia internacional',
     'premio mejor docente',
     'Comunidad de Madrid',
   ],
