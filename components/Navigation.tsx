@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Mail, FileDown } from 'lucide-react'
+import { Menu, X, Mail } from 'lucide-react'
 
 const links = [
   { label: 'Sobre mí', href: '#sobre-mi' },
@@ -56,18 +56,6 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="/cv-raul-garcia.pdf"
-            download
-            className={`flex items-center gap-1.5 text-[13px] font-semibold px-3 py-1.5 rounded-lg border transition-all duration-200 whitespace-nowrap ${
-              scrolled
-                ? 'border-stone-300 text-stone-700 hover:border-accent hover:text-accent'
-                : 'border-white/30 text-white/80 hover:border-white hover:text-white'
-            }`}
-          >
-            <FileDown size={13} />
-            CV
-          </a>
-          <a
             href="#contacto"
             className="flex items-center gap-1.5 bg-accent hover:bg-accent-dark text-white text-[13px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 whitespace-nowrap"
           >
@@ -102,15 +90,6 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="/cv-raul-garcia.pdf"
-              download
-              className="flex items-center gap-2 border border-stone-300 text-stone-700 text-sm font-semibold px-3 py-2.5 rounded-lg mt-2"
-              onClick={() => setMenuOpen(false)}
-            >
-              <FileDown size={14} />
-              Descargar CV
-            </a>
             <a
               href="#contacto"
               className="flex items-center gap-2 bg-accent text-white text-sm font-semibold px-3 py-2.5 rounded-lg mt-1"

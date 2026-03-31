@@ -1,19 +1,12 @@
-import { Mail, Phone, Linkedin, ArrowRight, CheckCircle, MapPin, Star, Sparkles, FileDown } from 'lucide-react'
+import { Mail, Linkedin, ArrowRight, CheckCircle, MapPin, Star, Sparkles, FileText } from 'lucide-react'
 
 const contactDetails = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'raulgarciaruiz1980@gmail.com',
-    href: 'mailto:raulgarciaruiz1980@gmail.com',
+    value: 'raulgarciadocente@gmail.com',
+    href: 'mailto:raulgarciadocente@gmail.com',
     note: 'Respondo en menos de 24h',
-  },
-  {
-    icon: Phone,
-    label: 'Teléfono',
-    value: '+34 611 835 368',
-    href: 'tel:+34611835368',
-    note: 'Llamadas y WhatsApp',
   },
   {
     icon: Linkedin,
@@ -131,27 +124,20 @@ export default function Contact() {
               </div>
             ))}
 
-            {/* CV Download card */}
-            <a
-              href="/cv-raul-garcia.pdf"
-              download
-              className="flex items-center gap-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 transition-all duration-200 group"
-            >
+            {/* CV bajo petición */}
+            <div className="flex items-center gap-4 bg-white/10 border border-white/20 rounded-2xl p-4">
               <div className="w-11 h-11 bg-accent/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <FileDown size={18} className="text-accent group-hover:translate-y-0.5 transition-transform" />
+                <FileText size={18} className="text-accent" />
               </div>
               <div className="flex-1">
-                <div className="text-white font-semibold text-sm">Descargar Currículum Vitae</div>
-                <div className="text-slate-400 text-xs mt-0.5">PDF listo para imprimir o añadir a base de datos</div>
+                <div className="text-white font-semibold text-sm">Currículum Vitae</div>
+                <div className="text-slate-400 text-xs mt-0.5">Disponible bajo petición · Contactad por email</div>
               </div>
-              <span className="flex-shrink-0 bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-lg">
-                PDF
-              </span>
-            </a>
+            </div>
 
             {/* Primary CTA */}
             <a
-              href="mailto:raulgarciaruiz1980@gmail.com"
+              href="mailto:raulgarciadocente@gmail.com"
               className="flex items-center justify-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold text-base px-8 py-4 rounded-2xl transition-all duration-200 hover:scale-105 shadow-xl shadow-orange-900/30 mt-2"
             >
               <Mail size={18} />

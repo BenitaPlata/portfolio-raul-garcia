@@ -1,4 +1,4 @@
-import { ArrowRight, Star, Globe, Award, BookOpen, Pencil, FileDown } from 'lucide-react'
+import { ArrowRight, Star, Globe, Award, BookOpen, Pencil } from 'lucide-react'
 
 const badges = [
   { icon: Globe, label: 'Experiencia internacional · C1 inglés', color: 'bg-emerald-400/15 text-emerald-200 border-emerald-400/25' },
@@ -74,12 +74,11 @@ export default function Hero() {
                   </svg>
                 </span>
               </h1>
-              <p className="text-base sm:text-xl lg:text-2xl text-slate-200 font-medium">
-                Ed. Primaria e Infantil · DECA · Experiencia internacional
-              </p>
-              <p className="text-sm sm:text-lg text-white/70 leading-relaxed max-w-lg">
-                Más de 15 años en el aula. 2 años en colegio internacional en Eslovaquia.
-              </p>
+              <div className="space-y-1.5 text-sm sm:text-base text-white/70 leading-relaxed max-w-lg">
+                <p>Docente con +15 años de experiencia en Educación Infantil y Primaria</p>
+                <p>Especialista en innovación pedagógica, educación emocional y metodologías activas</p>
+                <p>Reconocido a nivel nacional y con experiencia internacional</p>
+              </div>
             </div>
 
             {/* Badges */}
@@ -106,15 +105,10 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* CV download link */}
-            <a
-              href="/cv-raul-garcia.pdf"
-              download
-              className="inline-flex items-center gap-2 text-white/50 hover:text-white/90 text-sm transition-colors group w-fit"
-            >
-              <FileDown size={14} className="group-hover:translate-y-0.5 transition-transform" />
-              Descargar CV en PDF
-            </a>
+            {/* CV bajo petición */}
+            <p className="text-white/40 text-sm">
+              CV disponible bajo petición
+            </p>
 
             {/* Quick stats */}
             <div className="flex flex-wrap gap-8 pt-4 border-t border-white/10">
