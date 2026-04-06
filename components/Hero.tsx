@@ -140,7 +140,7 @@ export default function Hero() {
               </div>
 
               {/* Floating card: International */}
-              <div className="absolute -bottom-4 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl p-3 sm:p-4 max-w-[160px] hidden sm:block">
+              <div className="absolute -bottom-4 -left-8 bg-white rounded-2xl shadow-xl p-4 max-w-[160px] hidden lg:block">
                 <div className="flex items-center gap-2 mb-1">
                   <Globe size={14} className="text-accent" />
                   <span className="text-xs font-bold text-emerald-700">INTERNACIONAL</span>
@@ -151,7 +151,7 @@ export default function Hero() {
               </div>
 
               {/* Floating card: Award */}
-              <div className="absolute -top-4 -right-4 sm:-right-8 bg-amber-50 border border-amber-200 rounded-2xl shadow-xl p-3 sm:p-4 max-w-[180px] hidden sm:block">
+              <div className="absolute -top-4 -right-8 bg-amber-50 border border-amber-200 rounded-2xl shadow-xl p-4 max-w-[180px] hidden lg:block">
                 <div className="flex items-center gap-2 mb-1">
                   <Award size={14} className="text-amber-600" />
                   <span className="text-xs font-bold text-amber-700">PREMIADO</span>
